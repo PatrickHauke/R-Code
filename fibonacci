@@ -5,3 +5,9 @@ fibonacci <- function(n){
 	for (i in 3:n) a[i] = a[i-1] + a[i-2]
 	return (a)
 }
+
+#Below is the same, but as recurrence where it calls on itself. 
+n=15
+b = 1:n
+for(i in 1:n)
+	b[i] = (1/sqrt(5))*((1+sqrt(5))/2)^i - (1/sqrt(5))*((1-sqrt(5))/2)^i
